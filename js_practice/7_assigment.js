@@ -10,12 +10,19 @@ console.log(calcPolynomial(x));
 function calcPolynomialSum(arr1, arr2){
 let sum = [];
 let maxLength = Math.max(arr1.length, arr2.length);
-while(arr1.length() == maxLength){
-    push
-}
 for(let i = 0; i < maxLength; i++){
-    sum[i] = arr1[i] + arr2[i];
+    sum[i] = (arr1[i] || 0) + (arr2[i] || 0);
     }
 return sum;
 }
 console.log(calcPolynomialSum([1,2,5],[2,0,1,-7]));
+//3
+function calcPolynomialMul(arr1, arr2){
+let sum = [];
+let maxLength = Math.max(arr1.length, arr2.length);
+for(let i = 0; i < maxLength; i++){
+    sum[i] = (arr1[i] || 0) * (arr2[i] || 0);
+    }
+return sum;
+}
+console.log(calcPolynomialMul([1,2,5],[2,0,1,-7]));
